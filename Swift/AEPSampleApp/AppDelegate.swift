@@ -79,11 +79,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationWillEnterForeground(_ application: UIApplication) {
+        // step-init-start
         MobileCore.lifecycleStart(additionalContextData: nil)
+        // step-init-end
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
+        // step-init-start
         MobileCore.lifecyclePause()
+        // step-init-end
     }
 }
 
